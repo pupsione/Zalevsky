@@ -38,6 +38,9 @@ function styles() {
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+        'node_modules/slick-carousel/slick/slick.js',
+        'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
         'app/js/main.js'
     ])
         .pipe(concat('main.min.js'))
@@ -72,7 +75,7 @@ function build() {
         'app/css/style.min.css',
         'app/js/main.min.js'
     ], { base: 'app' })      /*--   чтоб файлы переносились в папками где они находятся  --*/
-    .pipe(dest('dist'))
+        .pipe(dest('dist'))
 }
 
 
