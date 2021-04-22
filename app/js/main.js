@@ -2,7 +2,7 @@ $(function () {
 
     $('.header__lang-btn').on('click', function () {
         $('.header__lang-btn').removeClass('header__lang-btn--active');
-        $(this).addClass('header__lang-btn--active')
+        $(this).addClass('header__lang-btn--active');
     });
 
 
@@ -10,17 +10,17 @@ $(function () {
         dots: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/arrow-left.svg" alt=""></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="images/icons/arrow-right.svg" alt=""></button>'
-    })
+    });
 
     $('.slider-mirrored').slick({
         dots: true,
         prevArrow: '<button type="button" class="slick-prev__mirrored"><img src="images/icons/arrow-left.svg" alt=""></button>',
         nextArrow: '<button type="button" class="slick-next__mirrored"><img src="images/icons/arrow-right.svg" alt=""></button>'
-    })
+    });
 
     $('.form-filter__btn').on('click', function () {
         $('.form-filter__btn').removeClass('form-filter__btn--active');
-        $(this).addClass('form-filter__btn--active')
+        $(this).addClass('form-filter__btn--active');
     });
 
     $(".deadline").ionRangeSlider({
